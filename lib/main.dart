@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:spotyland/helpers/preferences.dart';
 import 'package:spotyland/providers/theme_provider.dart';
 import 'package:spotyland/screens/screens.dart';
@@ -7,12 +8,8 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Cargar las variables de entorno solo si no estamos en Web
-  // if (!Foundation.kIsWeb) {
-  //   await dotenv.load(); // Cargar el archivo .env
-  //   // Verificar si la variable 'API_URL' se cargó correctamente
-  //   print(dotenv.env['API_URL'] ?? 'API_URL no cargada'); // Imprime la URL o el mensaje de error
-  // }
+  // Cargar las variables de entorno
+  await dotenv.load(fileName: ".env");
 
   // Inicializar preferencias
   await Preferences.initShared();

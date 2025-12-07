@@ -42,12 +42,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
+    - .env
     - assets/images/
     - assets/avatars/
     - assets/artistas/
     - assets/canciones/
+    - assets/albums/
     - assets/mp3/
 
   # An image asset can refer to one or more resolution-specific "variants", see

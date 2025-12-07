@@ -8,3 +8,8 @@ export 'package:spotyland/screens/artistas_screen.dart';
 export 'package:spotyland/screens/artistas_screen_item.dart';
 export 'package:spotyland/screens/albums_screen.dart';
 export 'package:spotyland/screens/albums_screen_item.dart';
+export 'package:spotyland/screens/album.dart';
+export 'package:spotyland/screens/cancion.dart';
+export 'package:spotyland/screens/albumsService.dart';
+export 'package:spotyland/screens/cancionesService.dart';
+export 'package:spotyland/screens/playlistService.dart';

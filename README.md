@@ -37,7 +37,7 @@ cp .env.example .env
 3. **Editar el archivo `.env`:**
 ```env
 # Para emulador Android:
-API_URL=http://10.0.2.2:3000/api
+API_URL=http://IP:PUERTO/api
 
 # Para dispositivo físico (usar IP de tu PC):
 API_URL=http://192.168.x.x:3000/api
